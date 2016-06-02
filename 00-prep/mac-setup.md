@@ -21,7 +21,9 @@ An enhanced Terminal we'll learn to use.
 
 ## Install Dev Tools
 
-In your terminal run this command
+In your terminal run this command (hold down command then press space, type in
+terminal, then hit enter, a white or black screen should appear, where you want
+to paste the line below, then press enter)
 ```
 xcode-select --install
 ```
