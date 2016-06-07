@@ -34,7 +34,8 @@ come out that we may like more):
 
 ### Communication
 
-- [Slack Channel](okcokcoders.slack.com)
+- [Slack Channel](https://okcokcoders.slack.com), note on slack the previous course is
+  on there, but I made a private summer session channel.
 - Email: okcoders@gmail.com
 
 ### Expectations:
@@ -44,14 +45,39 @@ school/college type tricks are needed (i.e grading homework, making up
 class, etc.), as you are willfully doing this and are already putting in effort
 because you want to. That being said, we do have a graduation showcase, and we
 do give out certificates, and this is something you can put on your linkedin. If
-want to be able to do any of these things, 80% attendance is required (i.e you
+you want to be able to do any of these things, 80% attendance is required (i.e you
 can miss 3 classes).
 
 We will have homework, though I strongly suggest independent reading of the
-materials I provide for each topic we cover. There will usually not be answers
+materials I provide for each topic we cover. If you are new to programming, at
+least 1 hour of reading a day is a good guideline. There will usually not be answers
 for the homework (as there are a lot of ways to do things), but if you need
 help, the mentors, myself, and the slack channel are available to you. Do not be
 afraid to reach out!
+
+### Structure
+
+I will update github as we go through the course with new material. The material
+is put in a folder like 01-javascript - the syllabus is the best guide to find
+the material we covered in a given class. In each of those folders you will also
+see a folder called example/ in there I will stick anything I write during the
+class, which includes answers to any in class exercises we do.
+
+Homework is setup by week, and you can find the homework in the exercises
+folder. I feel doing homework between Tuesday and Thursday to be a little
+onerous, so my expectation is that you are doing the homework for each week over
+the weekend.
+
+Eventually we will start to have a lot of code written and we will want to build
+on top of that. I will have some kind of project folder where we will start to
+accumulate a coherent project. For example, we will have an express application
+that serves from our mongo db, and we will have a scraper that is scheduled to
+scrape from some site of our choosing.
+
+I do enjoy questions during class. There is a ton of material/resources on the
+internet one can use to learn to program, but none of it is interactive. My hope
+is this course is a place you can ask questions and get some human interaction
+with other programmers if you are trying to make the switch.
 
 ### Sites we could scrape
 
@@ -61,7 +87,7 @@ afraid to reach out!
 - [Oklahoma](https://www.ok.gov/)
 - [Netflix](https://www.netflix.com/), because they removed their public api
 
-### Site we wouldn't need to scrape
+### Sites we wouldn't need to scrape
 
 - [Twitter](https://dev.twitter.com/overview/documentation)
 - [Wikipedia](https://www.mediawiki.org/wiki/API:Main_page)
