@@ -9,22 +9,22 @@ stand-up a restful api for others to consume the data we stored.
 
 Technologies we will use throughout the course to do this:
 
-javascript: [javascript?](https://www.javascript.com/), [mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [eloquentjs](http://eloquentjavascript.net/)
-bash: [bash](https://www.gnu.org/software/bash/), [command line](http://linuxcommand.org/tlcl.php)
-[node](https://nodejs.org/en/)
-[mongodb](https://www.mongodb.com/)
-[html](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[css](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[git](http://rogerdudler.github.io/git-guide/)
+- javascript: [javascript?](https://www.javascript.com/), [mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [eloquentjs](http://eloquentjavascript.net/)
+- bash: [bash](https://www.gnu.org/software/bash/), [command line](http://linuxcommand.org/tlcl.php)
+- [node](https://nodejs.org/en/)
+- [mongodb](https://www.mongodb.com/)
+- [html](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [css](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [git](http://rogerdudler.github.io/git-guide/)
 
 Frameworks we will probably use (frameworks move pretty fast, a new one might
 come out that we may like more):
 
-[lodash](https://lodash.com/)
-[mongoose](http://mongoosejs.com/)
-[express](http://expressjs.com/)
-[request](https://github.com/request/request)
-[cheerio](https://github.com/cheeriojs/cheerio)
+- [lodash](https://lodash.com/)
+- [mongoose](http://mongoosejs.com/)
+- [express](http://expressjs.com/)
+- [request](https://github.com/request/request)
+- [cheerio](https://github.com/cheeriojs/cheerio)
 
 ### General tenets for the course:
 
@@ -34,8 +34,8 @@ come out that we may like more):
 
 ### Communication
 
-[Slack Channel](okcokcoders.slack.com)
-Email: okcoders@gmail.com
+- [Slack Channel](okcokcoders.slack.com)
+- Email: okcoders@gmail.com
 
 ### Expectations:
 
@@ -55,22 +55,21 @@ afraid to reach out!
 
 ### Sites we could scrape
 
-[County Assessor](http://www.oklahomacounty.org/assessor/SearchMethod.htm)
-[IMDB](http://www.imdb.com/), [someone already did what we will be doing](http://www.omdbapi.com/)
-[Pitchfork](http://pitchfork.com/) (my favorite website)
-[Oklahoma](https://www.ok.gov/)
-[Netflix](https://www.netflix.com/), because they removed their public api
+- [County Assessor](http://www.oklahomacounty.org/assessor/SearchMethod.htm)
+- [IMDB](http://www.imdb.com/), [someone already did what we will be doing](http://www.omdbapi.com/)
+- [Pitchfork](http://pitchfork.com/) (my favorite website)
+- [Oklahoma](https://www.ok.gov/)
+- [Netflix](https://www.netflix.com/), because they removed their public api
 
 ### Site we wouldn't need to scrape
 
-[Twitter](https://dev.twitter.com/overview/documentation)
-[Wikipedia](https://www.mediawiki.org/wiki/API:Main_page)
-[Github](https://api.github.com/)
-[Goodreads](https://www.goodreads.com/api)
-[Spotify](https://developer.spotify.com/web-api/migration-guide/)
-[Worldbank](http://data.worldbank.org/developers)
-[Weather Underground](https://www.wunderground.com/weather/api/)
-
+- [Twitter](https://dev.twitter.com/overview/documentation)
+- [Wikipedia](https://www.mediawiki.org/wiki/API:Main_page)
+- [Github](https://api.github.com/)
+- [Goodreads](https://www.goodreads.com/api)
+- [Spotify](https://developer.spotify.com/web-api/migration-guide/)
+- [Worldbank](http://data.worldbank.org/developers)
+- [Weather Underground](https://www.wunderground.com/weather/api/)
 
 ## Syllabus
 
