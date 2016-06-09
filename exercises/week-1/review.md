@@ -45,6 +45,21 @@ Bool to String .toString() (or + to a string)
 Bool to Number +
 ```
 
+Implicit Conversion and ==
+http://es5.github.io/#x11.9.3
+http://stackoverflow.com/questions/7625144/implicit-data-type-conversion-in-javascript-when-comparing-integer-with-string-u
+```
+null == undefined
+
+true == "true"
+2 == "true"
+false == "false"
+0 == false
+0 == ""
+false == ""
+
+```
+
 Not so primitive - methods on our primitive types:
 ```
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
