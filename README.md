@@ -115,8 +115,8 @@ with other programmers if you are trying to make the switch.
 		</tr>
 		<tr>
 			<td>1.2</td>
-			<td></td>
-			<td></td>
+			<td>Javascript: Variables and Values</td>
+			<td>Bash: Introduction</td>
 		</tr>
 
 		<tr>
