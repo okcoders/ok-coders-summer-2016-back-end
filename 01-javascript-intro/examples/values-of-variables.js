@@ -16,6 +16,3 @@ var radius = +(process.argv[3])
 var area = pi * Math.pow(radius, 2)
 console.log(area)
 var circumference = 2 * pi * radius
->>>>>>> upstream/master
-
-
