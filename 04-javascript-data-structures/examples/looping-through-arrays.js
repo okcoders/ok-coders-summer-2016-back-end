@@ -1,6 +1,7 @@
 // as we have seen arrays can have more than just primitives, for example, they
 // can have an object as one of the elements in the array
 
+//
 // below I have an example array of some data you might see in the real world
 // (note, I made up the data though)
 

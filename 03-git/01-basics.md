@@ -97,3 +97,8 @@ list all my local branches, pass the --all flag to see any remote branches
 git rebase
 git cherry-pick
 git reset
+
+### config
+
+git config --global user.name "Your Name"
+git config --global user.email your@email.address
