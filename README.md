@@ -124,9 +124,12 @@ with other programmers if you are trying to make the switch.
 		</tr>
 		<tr>
 			<td>2.1</td>
+			<td>Javascript: Program Structure</td>
 		</tr>
 		<tr>
 			<td>2.2</td>
+			<td>Git</td>
+			<td>Javascript: Arrays and Objects</td>
 		</tr>
 
 		<tr>
