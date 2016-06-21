@@ -47,3 +47,34 @@ var sampleData = [
 
 // bonus, loop through you new array and tell me the value for total spending
 // since 1990
+//
+//
+//
+
+console.log(sampleData)
+
+var spendData = []
+for(var i = 0; i < sampleData.length; i++) {
+   spendData.push(sampleData[i].spend)
+}
+
+console.log(sampleData.length)
+console.log(spendData.length)
+console.log(spendData)
+
+var total = 0
+for(var i = 0; i < spendData.length; i++) {
+   total = total + spendData[i]
+}
+
+console.log(total)
+
+
+
+
+
+
+
+
+
+
