@@ -137,6 +137,7 @@ with other programmers if you are trying to make the switch.
 		</tr>
 		<tr>
 			<td>3.1</td>
+			<td>Javascript: Functions</td>
 		</tr>
 		<tr>
 			<td>3.2</td>
