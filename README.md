@@ -25,6 +25,7 @@ come out that we may like more):
 - [express](http://expressjs.com/)
 - [request](https://github.com/request/request)
 - [cheerio](https://github.com/cheeriojs/cheerio)
+- [async](https://github.com/caolan/async)
 
 ### General tenets for the course:
 
@@ -141,6 +142,7 @@ with other programmers if you are trying to make the switch.
 		</tr>
 		<tr>
 			<td>3.2</td>
+                        <td>Node: Introduction</td>
 		</tr>
 		<tr>
 			<th colspan="3" align="left">Week 4</th>
