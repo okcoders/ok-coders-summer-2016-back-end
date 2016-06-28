@@ -42,4 +42,6 @@
 3. add it as a dependency
 4. make a new script that requires that package
 5. call the methods on it in whatever creative way you can think of
+6. Pull in the lodash package
+7. Look at the documentation for lodash and do something with one of the methods provided in it
 
