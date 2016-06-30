@@ -154,6 +154,7 @@ with other programmers if you are trying to make the switch.
 		</tr>
 		<tr>
 			<td>4.2</td>
+			<td>Databases: MongoDB</td>
 		</tr>
 		<tr>
 			<th colspan="3" align="left">Week 5</th>
