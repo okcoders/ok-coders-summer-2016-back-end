@@ -1,0 +1,14 @@
+{
+  "name": "ok-coders-back-end-in-class",
+  "version": "1.0.0",
+  "description": "in class example of creating a module for npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ME",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "4.13.1"
+  }
+}
