@@ -161,6 +161,8 @@ with other programmers if you are trying to make the switch.
 		</tr>
 		<tr>
 			<td>5.1</td>
+			<td>Web Fundamentals: http, html, css, RESTful</td>
+			<td>Express (node.js framework): Introduction</td>
 		</tr>
 		<tr>
 			<td>5.2</td>
