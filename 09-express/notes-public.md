@@ -34,3 +34,10 @@ http://expressjs.com/en/4x/api.html
 using the api docs, find out how to respond with json data using express. Make a
 route that responds with some sample json data (you can just hardcode an array
 of objects, for example, and use that as your sample data).
+
+
+
+
+
+
+
