@@ -23,10 +23,7 @@
    a. express framework vs. express library
    b. express newDir
    c. what was created?
-2. path and path matching
-3. specifying methods (get, post, put, delete)
-4. express app and express router
-  router.all, router.all('wildcard'), router.get, etc.
+1. specifying methods (get, post, put, delete)
 
 http://expressjs.com/en/4x/api.html
 
@@ -35,8 +32,35 @@ using the api docs, find out how to respond with json data using express. Make a
 route that responds with some sample json data (you can just hardcode an array
 of objects, for example, and use that as your sample data).
 
+## Day 2:
 
+### express
+1. nodemon
+2. path and path matching (order matters)
+3. express app and express router
+  router.all, router.all('wildcard'), router.get, etc.
 
+### mongoose
+1. connecting
+2. making calls to our database
+3. responding with json from our database
+
+### exercises
+
+#### exercise 1:
+```
+express exercise-app
+cd exercise-app
+npm install
+```
+
+open app.js in your editor
+add a get, post, put, and delete method for a '/chicken' route - respond with any json you like
+bonus: make it so anything that has /chicken (i.e /chicken/duck should match) at the beginning of the route is
+mapped to your get, post, put, and delete methods
+
+#### exercise 2:
+make a length route that responds with how many items are in the collection
 
 
 
