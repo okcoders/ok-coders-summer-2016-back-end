@@ -1,4 +1,5 @@
 var express = require('express');
+var mongoose = require('mongoose')
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -7,8 +8,21 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var emails = require('./routes/emails');
 
 var app = express();
+
+mongoose.connect('mongodb://localhost/enron')
+var db = mongoose.connection
+
+
+db.on('error', function(msg) {
+  console.log('Mongoose connection error ', msg)
+})
+
+db.once('open', function() {
+  console.log('Mongoose connection established')
+})
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -25,12 +39,23 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 
+app.use('/emails', emails)
+
+app.route('/chicken*')
+  .get(genericResponse)
+  .post(genericResponse)
+  .put(genericResponse)
+  .delete(genericResponse)
+
+function genericResponse(req, res) {
+  res.json({pretty: 'easy!'})
+}
 
 app.get('/chicken/*', chickenGetCallback)
 app.post('/chicken/:id', chickenPostCallback)
 
 var sampleData = [
-{user: 2, name: 'zach'},
+{user: 2, name: 'zachhhhh'},
 {user: 3, name: 'phil'}]
 
 app.get('/chickenjson', function(req, res) {
