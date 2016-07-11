@@ -1,0 +1,34 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run-script',
+1 verbose cli   'watch' ]
+2 info using npm@2.14.20
+3 info using node@v4.4.0
+4 verbose stack Error: Failed to parse json
+4 verbose stack Unexpected token 'w' at 7:6
+4 verbose stack     "watch": "nodemon ./bin/www"
+4 verbose stack      ^
+4 verbose stack     at parseError (c:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:379:11)
+4 verbose stack     at parseJson (c:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:68:23)
+4 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:48:5
+4 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\graceful-fs.js:78:16
+4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+5 verbose cwd c:\Users\wwatson\desktop\ok-coders-summer-2016-back-end\exercise-app
+6 error Windows_NT 10.0.10586
+7 error argv "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run-script" "watch"
+8 error node v4.4.0
+9 error npm  v2.14.20
+10 error file c:\Users\wwatson\desktop\ok-coders-summer-2016-back-end\exercise-app\package.json
+11 error code EJSONPARSE
+12 error Failed to parse json
+12 error Unexpected token 'w' at 7:6
+12 error     "watch": "nodemon ./bin/www"
+12 error      ^
+13 error File: c:\Users\wwatson\desktop\ok-coders-summer-2016-back-end\exercise-app\package.json
+14 error Failed to parse package.json data.
+14 error package.json must be actual JSON, not just JavaScript.
+14 error
+14 error This is not a bug in npm.
+14 error Tell the package author to fix their package.json file. JSON.parse
+15 verbose exit [ 1, true ]
