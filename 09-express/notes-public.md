@@ -34,6 +34,17 @@ of objects, for example, and use that as your sample data).
 
 ## Day 2:
 
+### vim
+1. the modes (command, insert, visual)
+2. getting out :w, :q, :x, :q!
+3. pasting "+p
+4. x
+5. dw
+6. 0, A, 56G
+7. dd
+8. Y, P
+9. o, O
+
 ### express
 1. nodemon
 2. path and path matching (order matters)
