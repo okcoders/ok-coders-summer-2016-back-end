@@ -149,18 +149,25 @@ with other programmers if you are trying to make the switch.
 		</tr>
 		<tr>
 			<td>4.1</td>
+			<td>Node: npm and require</td>
+			<td>Databases: Modeling and Introduction</td>
 		</tr>
 		<tr>
 			<td>4.2</td>
+			<td>Databases: MongoDB</td>
 		</tr>
 		<tr>
 			<th colspan="3" align="left">Week 5</th>
 		</tr>
 		<tr>
 			<td>5.1</td>
+			<td>Web Fundamentals: http, html, css, RESTful</td>
+			<td>Express (node.js framework): Introduction</td>
 		</tr>
 		<tr>
 			<td>5.2</td>
+			<td>Express (node.js framework): Intermediate</td>
+			<td>Mongoose: Introduction</td>
 		</tr>
 		<tr>
 			<th colspan="3" align="left">Week 6</th>

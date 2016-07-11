@@ -25,5 +25,23 @@
 # node server
 # have the class connect to it.
 
+### week 4
 
+#### npm
+1. npm - introduction
+2. npm - npm init and package.json
+3. npm install and npm install -g and npm install --save
+4. require (commonJS)
+5. module.exports (special exports variable), and replacing module.exports
+6. require and the steps ., .., /, built-in, node_modules/
+7. publish the package
+
+#### exercise:
+1. make a new module (directory with package.json)
+2. find the package I published on npm
+3. add it as a dependency
+4. make a new script that requires that package
+5. call the methods on it in whatever creative way you can think of
+6. Pull in the lodash package
+7. Look at the documentation for lodash and do something with one of the methods provided in it
 
