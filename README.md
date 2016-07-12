@@ -167,13 +167,13 @@ with other programmers if you are trying to make the switch.
 		<tr>
 			<td>5.2</td>
 			<td>Express (node.js framework): Intermediate</td>
-			<td>Mongoose: Introduction</td>
 		</tr>
 		<tr>
 			<th colspan="3" align="left">Week 6</th>
 		</tr>
 		<tr>
 			<td>6.1</td>
+			<td>Mongoose: Introduction</td>
 		</tr>
 		<tr>
 			<td>6.2</td>
