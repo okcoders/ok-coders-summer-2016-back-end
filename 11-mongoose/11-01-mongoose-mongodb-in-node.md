@@ -111,7 +111,7 @@ The schema does this. The schema makes it possible for the mongoose library to m
 Let's define a schema for our a emails object. Make a  *models/emails.js* file and define the following schema:
 
 	var mongoose = require('mongoose')
-        var Schema = mongoose.Schema()
+        var Schema = mongoose.Schema // return constructor function
 
 	var schema = new Schema({
           _id: Schema.Types.ObjectId
