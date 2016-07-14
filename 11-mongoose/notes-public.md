@@ -25,3 +25,24 @@ Make new routes that pull data from the enron email collection
 1. first route should respond with the number of elements in the collection
 2. second route should respond with emails that have bob somewhere in the
    sender's name.
+
+Thursday:
+
+exercise:
+get a new project going and get mongoose connected to a locally running mongod
+
+1. Route for getting count
+2. Route for adding new data
+3. Route for updating data
+4. Route for deleting data
+
+Left to learn: request and cheerio. High level overview of how it fits together
+
+Request https://github.com/request/request:
+1. Simple request
+2. What is in the callback (err, response, body)
+3. Change http method
+4. Proper syntax with options object and callback
+5. Query String
+
+

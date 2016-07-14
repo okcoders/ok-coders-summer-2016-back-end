@@ -7,6 +7,7 @@ router.get('/length', getLengthCallback)
 router.get('/bob', getBobCallback)
 router.post('/:sender', postSenderCallback)
 router.get('/:id', getIdCallback)
+router.put('/:id', putIdCallback)
 router.delete('/:id', deleteIdCallback)
 
 function getCallback(req, res) {
@@ -25,6 +26,19 @@ function getCallback(req, res) {
 function getIdCallback(req, res) {
   Emails
     .where('_id').equals(req.params.id)
+    .exec(function (err, data) {
+      if (err) {
+        res.send("error!")
+      } else {
+        res.json(data)
+      }
+    })
+}
+
+function putIdCallback(req, res) {
+  Emails
+    .where('_id').equals(req.params.id)
+    .update({$set: {sender: 'duck'}})
     .exec(function (err, data) {
       if (err) {
         res.send("error!")

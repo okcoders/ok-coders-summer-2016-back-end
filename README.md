@@ -177,6 +177,8 @@ with other programmers if you are trying to make the switch.
 		</tr>
 		<tr>
 			<td>6.2</td>
+			<td>Mongoose: Continued</td>
+			<td>Request: Http client</td>
 		</tr>
 		<tr>
 			<th colspan="3" align="left">Week 7</th>

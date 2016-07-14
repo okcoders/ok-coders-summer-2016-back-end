@@ -2,7 +2,7 @@
 
 We can use the built-in http module for more than just creating a server. With
 it we can also make requests to other servers, just like what you do in the
-browswer. This ability we will use to ask for content on the sites we are
+browser. This ability we will use to ask for content on the sites we are
 interested in. The request module wraps the built-in http module, and gives us
 an api (a set of methods), that makes it easier for us to get content from
 websites.
@@ -125,6 +125,6 @@ var options = {
 
 ```
 
-Will turn our request into http://pitchfork.com/reviews/best/albums?page=5
+Will turn our request into http://pitchfork.com/reviews/best/albums?page=4
 
 
