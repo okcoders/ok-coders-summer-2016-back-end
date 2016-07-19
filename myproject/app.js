@@ -6,8 +6,21 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
+mongoose.connect('mongodb://localhost/enron')
+var db = mongoose.connection
+
+db.on('error', function() {
+      console.log('db open error')
+      })
+
+db.once('open', function() {
+        console.log('connection success')
+}
+
+       )
+
 var routes = require('./routes/index');
-var users = require('./routes/users');
+var emails = require('./routes/emails');
 
 var app = express();
 
@@ -24,7 +37,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/users', users);
+app.use('/emails', emails);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
