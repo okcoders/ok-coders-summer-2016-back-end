@@ -185,6 +185,8 @@ with other programmers if you are trying to make the switch.
 		</tr>
 		<tr>
 			<td>7.1</td>
+			<td>Cheerio: Introduction</td>
+			<td>Oklahoma County Assessor: Site Overview</td>
 		</tr>
 		<tr>
 			<td>7.2</td>
