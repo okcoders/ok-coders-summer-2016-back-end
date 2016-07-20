@@ -16,7 +16,14 @@ exercise:
 4. iteration on find
 
 ### County Site
-1. overview of site
+1. overview of site we are interested in
+2. why is it valuable, how can you get data from it now
+3. tools we need (chrome dev tools, curl, postman)
+4. server rendered vs. client rendered
+5. logins or some kind of cookie?
+6. Search options posting form data
+7. When do they give us a cookie
+5. how are we going to gather the data
 
 ### exercise
 1. setup a new project with request
