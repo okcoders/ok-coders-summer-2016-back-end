@@ -167,34 +167,41 @@ with other programmers if you are trying to make the switch.
 		<tr>
 			<td>5.2</td>
 			<td>Express (node.js framework): Intermediate</td>
-			<td>Mongoose: Introduction</td>
 		</tr>
 		<tr>
 			<th colspan="3" align="left">Week 6</th>
 		</tr>
 		<tr>
 			<td>6.1</td>
+			<td>Mongoose: Introduction</td>
 		</tr>
 		<tr>
 			<td>6.2</td>
+			<td>Mongoose: Continued</td>
+			<td>Request: Http client</td>
 		</tr>
 		<tr>
 			<th colspan="3" align="left">Week 7</th>
 		</tr>
 		<tr>
 			<td>7.1</td>
+			<td>Cheerio: Introduction</td>
+			<td>Oklahoma County Assessor: Site Overview</td>
 		</tr>
 		<tr>
 			<td>7.2</td>
+			<td>Oklahoma County Assessor (Capstone): Scraping Pt. 1</td>
 		</tr>
 		<tr>
 			<th colspan="3" align="left">Week 8</th>
 		</tr>
 		<tr>
 			<td>8.1</td>
+			<td>Oklahoma County Assessor (Capstone): Scraping Pt. 2</td>
 		</tr>
 		<tr>
 			<td>8.2</td>
+			<td>Oklahoma County Assessor (Capstone): Api</td>
 		</tr>
 	</tbody>
 </table>
