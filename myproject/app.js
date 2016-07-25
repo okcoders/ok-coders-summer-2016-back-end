@@ -5,6 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+var request = require('request');
 
 mongoose.connect('mongodb://localhost/enron')
 var db = mongoose.connection
@@ -70,6 +71,17 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
+
+request('http://pitchfork.com', genericCallback)
+
+function genericCallback(err, response, body) {
+  if (err) {
+    console.log('oops!')
+  } else {
+    console.log('response:', response.statusCode, response.headers)
+    console.log('body:', body.substring(0, 100))
+  }
+}
 
 
 module.exports = app;
