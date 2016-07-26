@@ -22,3 +22,42 @@ gathering is done we will then go to the next map number.
 5. show the cookie that we need to utilize to go to other page
 6. capture page profile
 7. ensure sync for generation of next query in order to keep state
+
+
+### week 8
+
+#### next step is to gather detail info for account numbers
+2. store the account numbers in a global variable
+3. loop through and create a request for each
+4. parse the html we need (in class exercise)
+5. stick that into mongo
+6. wrap request map info in a scrape function
+7. create loopOverMaps function that helps with iterating once query map is done
+
+
+#### repeat this for all map numbers
+
+how do they know I am a machine?
+a. ongoing battle, but,
+b. they look at headers
+c. they track your ip
+d. they watch your behavior (things like rapid requests, or regularly timed
+  requests can be flagged
+
+
+so what can we do?
+a. spoof our headers
+b. change our ip address
+c. replicate human behavior
+  1. sleep
+  2. get the correct cookies
+
+notes for me:
+1. modify to handle multiple map dates
+2. sequence of requests
+3. cookie jar
+4. headers
+5. sleep
+6. parsing account number page for the attributes we want
+7. how to organize the code
+8. if time start to talk about how to setup the api
