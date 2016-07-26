@@ -2,94 +2,230 @@ var request = require('request')
 var cheerio = require('cheerio')
 var _ = require('lodash')
 
-var minRange = 1001
-var maxRange = 4944
-var samplePage = 2713
+var minMapNumber = 1100
+var maxMapNumber = 4944
+var sampleMapNumber = 2713
 
-var currentMapNumber
-var currentPage
-var currentState
-var numberOfCalls = 0 // sorry
+loopOverMaps(minMapNumber)
 
-queryMap(samplePage, '', false, 1)
-
-function queryMap(mapNumber, state, movePage, page) {
-  numberOfCalls++
-  currentMapNumber = mapNumber
-  currentPage = page
-  currentState = state
-
-  var url = 'http://www.oklahomacounty.org/assessor/Searches/MapNumber.asp'
-  if (state) {
-    var headers = { Cookie: state }
+function loopOverMaps(number) {
+  if(number <= maxMapNumber) {
+    console.log('starting scrape for mapNumber:', number)
+    scrape(number)
   }
-  if (movePage) {
-    var form = { Map: mapNumber, fpdbr_0_PagingMove: "  >   " }
-  } else {
-    var form = { Map: mapNumber }
-  }
-  var options = {
-    url: url,
-    method: 'POST',
-    form: form,
-    headers: headers
-  }
-
-  console.log(`Bout to try and query ${url} for map: ${mapNumber}, page: ${page}`)
-  request(options, _queryMapCallback)
 }
 
-function _queryMapCallback(err, res, body) {
-  if (err) {
-    console.log('error!', err)
-  } else {
-    if (!currentState) {
-      currentState = _.replace(res.headers['set-cookie'][0], '; path=/', '')
+function scrape(scrapeNumber) {
+  var currentMapNumber
+  var currentState
+  var accountNumberCollector
+  var goodCookie
+  var goodParsedCookie
+  var jar = request.jar()
+  function sleepTime() {
+    var ran = Math.random() * 10000
+    console.log(ran)
+    return ran
+  }
+  var headers = {
+        Accept:'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+        'Accept-Encoding':'gzip, deflate, sdch',
+        'Accept-Language':'en-US,en;q=0.8',
+        Connection:'keep-alive',
+        Host:'www.oklahomacounty.org',
+        Referer: 'https://www.google.com/',
+        'Upgrade-Insecure-Requests':'1',
+        'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+        Cookie: 'nlbi_306289=VTpEJFYsCinsBIgDVY/nZQAAAACzbOJ5TJ3FIKa/j8ArtKpd; __utmt=1; __utma=242048028.498561610.1469505710.1469505710.1469505710.1; __utmb=242048028.1.10.1469505710; __utmc=242048028; __utmz=242048028.1469505710.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided); visid_incap_306289=ntHvWY93T1aqb25SJfcTaKrgllcAAAAAQUIPAAAAAAAKv5lCPzEuFNG+MpxIGe1g; incap_ses_168_306289=fvt+L01YHDCoLJGlZttUAqrgllcAAAAAvLDSIsMDG21Dgw8QtCdP7g=='
+      }
+  getGoodCookie()
+
+
+  function queryMapNumber(mapNumber, nextPage, page, state) {
+    currentMapNumber = mapNumber
+    var url = 'http://www.oklahomacounty.org/assessor/Searches/MapNumber.asp'
+    var method = 'POST'
+
+    if (nextPage) {
+      var form = {
+        fpdbr_0_PagingMove: "  >   ",
+        Map: mapNumber
+      }
+    } else {
+      var form = { Map: mapNumber }
     }
-    console.log(currentState)
-    getAccountNo(body)
+
+    if (state) {
+      var headers = {
+        Cookie: state
+      }
+    } else {
+      var headers = {}
+    }
+    var options = {
+      url: url,
+      method: method,
+      form: form,
+      headers: headers
+    }
+
+    console.log('requesting map number:', mapNumber, 'page: ', page)
+    request(options, mapQueryCallback)
   }
-}
 
-function getAccountNo(body, state) {
-  var $ = cheerio.load(body)
-  var accountLinkObjects = $('a[href*="ACCOUNTNO"]')
-  var accountLinks = _.map(accountLinkObjects, link => link.attribs.href)
-  console.log(`discovered ${accountLinks.length} links`)
-
-  var currentPageProfile = pageProfile($)
-  if (currentPageProfile.pagesLeft > 0) {
-    console.log('got some more pages!')
-    syncQueryNextPage(currentPageProfile.currentPage + 1)
-  } else {
-    console.log('no more pages!')
+  function mapQueryCallback(err, res, body) {
+    if (err) {
+      console.log('error!', err)
+    } else {
+      if (res.statusCode == 200) {
+        if (!currentState) {
+          currentState = _.replace(res.headers['set-cookie'][0], /;.*/, '')
+          currentState = _.map(res.headers['set-cookie'], c => _.replace(c, /;.*/, '')).join('; ')
+        }
+        gatherAccountNo(body)
+      }
+    }
   }
-}
 
-function pageProfile($) {
-  var pages = _.trim($('nobr').text())
-  if (pages) {
-    var pattern = /\[(.*)\/(.*)\]/
-    var match = pages.match(pattern)
-    var currentPage = +match[1]
-    var totalPages = +match[2]
+  function gatherAccountNo(body) {
+    var $ = cheerio.load(body)
+    var accountNoElements = $('a[href*="ACCOUNTNO"]')
+    var accountNumbers = _.map(accountNoElements, elem => {
+      return _.replace(elem.attribs.href, 'AN-R.asp?ACCOUNTNO=', '')
+    })
+    console.log(`discovered ${accountNumbers.length} account links!`)
+    accountNumberCollector = _.union(accountNumberCollector, accountNumbers)
+
+    var currentPageInfo = pageInfo($)
+    if (currentPageInfo.pagesLeft > 0) {
+      queryMapNumber(currentMapNumber, true, currentPageInfo.currentPage + 1, currentState)
+    } else {
+      console.log('no more pages!')
+      console.log(`I have ${accountNumberCollector.length} account numbers to gather`)
+      crawlFoundAccountNumbers(accountNumberCollector)
+    }
+  }
+
+  function pageInfo(body) {
+    var pageSummary = _.trim(body('nobr').text())
+    if (pageSummary) {
+      var pattern = /\[(.*)\/(.*)\]/
+      var matches = pageSummary.match(pattern)
+      var currentPage = +(matches[1])
+      var totalPages = +(matches[2])
+    } else {
+      var currentPage = 1
+      var totalPages = 1
+    }
+
     return {
       currentPage: currentPage,
       totalPages: totalPages,
       pagesLeft: totalPages - currentPage
     }
-  } else {
-    return {currentPage: 1, totalPages: 1, pagesLeft: 0 }
   }
-}
 
-function syncQueryNextPage(nextPage) {
-  // really ugly, but meh
-  // way the site works we must send the state that is stored in the cookie, so
-  // I have to keep the calls in sync, and have to set some globals
-  while ((nextPage - numberOfCalls) != 1) {
+  function crawlFoundAccountNumbers(numbers) {
+    var lastNumber = numbers[numbers.length - 1]
+     sleep(sleepTime())
+       console.log('account number')
+     // requestAccountNumberPage(numbers[3])
+    _.each(numbers, number => {
+      sleep(3000)
+      requestAccountNumberPage(number)
+      if (number === lastNumber) {
+        loopOverMaps(currentMapNumber + 1)
+      }
+    })
   }
-  queryMap(currentMapNumber, currentState, true, nextPage)
+
+  function requestAccountNumberPage(accountNumber) {
+    var baseUrl = 'http://www.oklahomacounty.org/assessor/Searches/AN-R.asp'
+    var method = 'GET'
+    var options = {
+      url: baseUrl,
+      method: method,
+      qs: {
+        ACCOUNTNO: accountNumber
+      },
+      headers: headers
+    }
+    console.log('requesting page for account number: ', accountNumber)
+    request(options, parseAccountNumberPage)
+  }
+
+  function parseAccountNumberPage(err, res, body) {
+    var $ = cheerio.load(body)
+      console.log($.html())
+    // var account = $('tbody')
+    // var accountNumberParent = $('td:contains("Account #:")')
+    // var accountNumber = accountNumberParent[1].next.next.children[0].children.data
+    // var physicalAddressParent = $('td:contains("Physical Address")')
+    // var physicalAddress = physicalAddressParent[1].next.next.children[0].children[0].data
+    // var schoolParent = $('td:contains("School System:")')
+    // var school = physicalAddressParent[1].next.next.children[0]
+    // console.log(school)
+    // var taxParent = $('td:contains("Taxable Market")')
+    // var tax = physicalAddressParent[1].next.next.children[0]
+    // console.log(tax)
+  }
+
+  // use if you start getting blocked to test that you are now unblocked
+  function testAccountNo() {
+    request(
+      { url: 'http://www.oklahomacounty.org/assessor/Searches/AN-R.asp',
+        qs: {
+          ACCOUNTNO: 'R209111030'
+        },
+      }, function(err, res, data) {
+        sleep(sleepTime())
+      })
+  }
+
+  // start off to get a session
+  function getGoodCookie() {
+    request({
+        url:'http://www.oklahomacounty.org/assessor/',
+        headers: headers
+      }, function(err, res, data) {
+        console.log(data)
+      sleep(sleepTime())
+    request({
+        url:'http://www.oklahomacounty.org/assessor/',
+      }, function(err, res, data) {
+        console.log(data)
+      sleep(sleepTime())
+    request({
+        url:'http://www.oklahomacounty.org/assessor/Searches/DefaultSearch.asp',
+      }, function(err, res, data) {
+        console.log(data)
+      sleep(sleepTime())
+      var url = 'http://www.oklahomacounty.org/assessor/Searches/MapNumber.asp'
+      var method = 'POST'
+      var form = { Map: Math.random() }
+      var options = {
+        url: url,
+        method: method,
+        form: form,
+      }
+
+      request(options, function(err, res, data) {
+        sleep(sleepTime())
+        queryMapNumber(scrapeNumber, false, 1, "")
+      })
+    })
+    })
+    })
+  }
+
+  function sleep(time) {
+      console.log("sleeping")
+    var stop = new Date().getTime()
+    while(new Date().getTime() < stop + time) {
+      ;
+    }
+      console.log("awake")
+  }
 }
 
 
