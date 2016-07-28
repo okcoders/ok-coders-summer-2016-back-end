@@ -2,7 +2,8 @@ var cheerio = require('cheerio')
 var _ = require('lodash')
 
 function pageInfo(body) {
-  var pageSummary = _.trim(body('nobr').text())
+  var $ = cheerio.load(body)
+  var pageSummary = _.trim($('nobr').text())
   if (pageSummary) {
     var pattern = /\[(.*)\/(.*)\]/
     var matches = pageSummary.match(pattern)

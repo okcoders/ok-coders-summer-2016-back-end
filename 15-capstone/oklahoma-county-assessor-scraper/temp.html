@@ -1,13 +1,1308 @@
 <html>
+
+
+
+
 <head>
-<meta name="robots" content="noindex,nofollow">
-<script>
-(function(){function getSessionCookies(){var cookieArray=new Array();var cName=/^\s?incap_ses_/;var c=document.cookie.split(";");for(var i=0;i<c.length;i++){var key=c[i].substr(0,c[i].indexOf("="));var value=c[i].substr(c[i].indexOf("=")+1,c[i].length);if(cName.test(key)){cookieArray[cookieArray.length]=value}}return cookieArray}function setIncapCookie(vArray){var res;try{var cookies=getSessionCookies();var digests=new Array(cookies.length);for(var i=0;i<cookies.length;i++){digests[i]=simpleDigest((vArray)+cookies[i])}res=vArray+",digest="+(digests.join())}catch(e){res=vArray+",digest="+(encodeURIComponent(e.toString()))}createCookie("___utmvc",res,20)}function simpleDigest(mystr){var res=0;for(var i=0;i<mystr.length;i++){res+=mystr.charCodeAt(i)}return res}function createCookie(name,value,seconds){var expires="";if(seconds){var date=new Date();date.setTime(date.getTime()+(seconds*1000));var expires="; expires="+date.toGMTString()}document.cookie=name+"="+value+expires+"; path=/"}function test(o){var res="";var vArray=new Array();for(var j=0;j<o.length;j++){var test=o[j][0];switch(o[j][1]){case"exists":try{if(typeof(eval(test))!="undefined"){vArray[vArray.length]=encodeURIComponent(test+"=true")}else{vArray[vArray.length]=encodeURIComponent(test+"=false")}}catch(e){vArray[vArray.length]=encodeURIComponent(test+"=false")}break;case"value":try{try{res=eval(test);if(typeof(res)==="undefined"){vArray[vArray.length]=encodeURIComponent(test+"=undefined")}else if(res===null){vArray[vArray.length]=encodeURIComponent(test+"=null")}else{vArray[vArray.length]=encodeURIComponent(test+"="+res.toString())}}catch(e){vArray[vArray.length]=encodeURIComponent(test+"=cannot evaluate");break}break}catch(e){vArray[vArray.length]=encodeURIComponent(test+"="+e)}case"plugin_extentions":try{var extentions=[];try{i=extentions.indexOf("i")}catch(e){vArray[vArray.length]=encodeURIComponent("plugin_ext=indexOf is not a function");break}try{var num=navigator.plugins.length if(num==0||num==null){vArray[vArray.length]=encodeURIComponent("plugin_ext=no plugins");break}}catch(e){vArray[vArray.length]=encodeURIComponent("plugin_ext=cannot evaluate");break}for(var i=0;i<navigator.plugins.length;i++){if(typeof(navigator.plugins[i])=="undefined"){vArray[vArray.length]=encodeURIComponent("plugin_ext=plugins[i] is undefined");break}var filename=navigator.plugins[i].filename var ext="no extention";if(typeof(filename)=="undefined"){ext="filename is undefined"}else if(filename.split(".").length>1){ext=filename.split('.').pop()}if(extentions.indexOf(ext)<0){extentions.push(ext)}}for(i=0;i<extentions.length;i++){vArray[vArray.length]=encodeURIComponent("plugin_ext="+extentions[i])}}catch(e){vArray[vArray.length]=encodeURIComponent("plugin_ext="+e)}break;case"plugins":try{p=navigator.plugins pres=""for(a in p){pres+=(p[a]['description']+" ").substring(0,20)}vArray[vArray.length]=encodeURIComponent("plugins="+pres)}catch(e){vArray[vArray.length]=encodeURIComponent("plugins="+e)}break;case"plugin":try{var a=navigator.plugins;for(i in a){var f=a[i]["filename"].split(".");if(f.length==2){vArray[vArray.length]=encodeURIComponent("plugin="+f[1]);break}}}catch(e){vArray[vArray.length]=encodeURIComponent("plugin="+e)}break}}vArray=vArray.join();return vArray}var o=[["navigator","exists"],["navigator.vendor","value"],["navigator.appName","value"],["navigator.plugins.length==0","value"],["navigator.platform","value"],["navigator.webdriver","value"],["platform","plugin"],["platform","plugin_extentions"],["ActiveXObject","exists"],["webkitURL","exists"],["_phantom","exists"],["callPhantom","exists"],["chrome","exists"],["yandex","exists"],["opera","exists"],["opr","exists"],["safari","exists"],["awesomium","exists"],["puffinDevice","exists"],["navigator.cpuClass","exists"],["navigator.oscpu","exists"],["navigator.connection","exists"],["window.outerWidth==0","value"],["window.outerHeight==0","value"],["window.WebGLRenderingContext","exists"],["document.documentMode","value"],["eval.toString().length","value"]];try{setIncapCookie(test(o));document.createElement("img").src="/_Incapsula_Resource?SWKMTFSR=1&e="+Math.random()}catch(e){img=document.createElement("img");img.src="/_Incapsula_Resource?SWKMTFSR=1&e="+e}})();
+
+
+<meta http-equiv="Content-Language" content="en-us">
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+
+<meta name="ProgId" content="FrontPage.Editor.Document">
+
+<title>Leonard Sullivan Oklahoma County Assessor Real Property Detail Sheet</title>
+
+<script language="JavaScript">
+
+
+
+<!-- Begin
+
+function go(loc) {
+
+window.location.href = loc;
+
+}
+
+
+
+
+
+function FP_swapImg() {//v1.0
+
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+
+}
+
+
+
+function FP_preloadImgs() {//v1.0
+
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+
+}
+
+
+
+function FP_getObjectByID(id,o) {//v1.0
+
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+
+ return null;
+
+}
+
+//  End -->
+
 </script>
-<script>
+
+
+
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19780856-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<meta name="Microsoft Border" content="none">
+</head>
+
+<body onload="FP_preloadImgs(/*url*/&apos;button42.jpg&apos;, /*url*/&apos;button43.jpg&apos;, /*url*/&apos;button45.jpg&apos;, /*url*/&apos;button46.jpg&apos;, /*url*/&apos;button48.jpg&apos;, /*url*/&apos;button49.jpg&apos;, /*url*/&apos;button4B.jpg&apos;, /*url*/&apos;button4C.jpg&apos;, /*url*/&apos;button4E.jpg&apos;, /*url*/&apos;button4F.jpg&apos;)">
+
+
+
+
+<script language="JavaScript">
+<!--
+
+if (document.images) {
+  image1on = new Image();
+  image1on.src = "../images/home_hover1.jpg";
+
+  image2on = new Image();
+  image2on.src = "../images/contact_hover.jpg";
+
+  image3on = new Image();
+  image3on.src = "../images/search_hover1.jpg";
+
+  image4on = new Image();
+  image4on.src = "../images/faq_hover.jpg";
+
+  image1off = new Image();
+  image1off.src = "../images/home_button1.jpg";
+
+  image2off = new Image();
+  image2off.src = "../images/contact_button.jpg";
+
+  image3off = new Image();
+  image3off.src = "../images/search_button1.jpg";
+
+  image4off = new Image();
+  image4off.src = "../images/faq_button.jpg";
+
+}
+
+function changeImages() {
+  if (document.images) {
+    for (var i=0; i<changeImages.arguments.length; i+=2) {
+      document[changeImages.arguments[i]].src = eval(changeImages.arguments[i+1] + ".src");
+    }
+  }
+}
+
+dayName = new Array ("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
+monName = new Array ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")
+now = new Date
+
+// -->
+</script>
+
+
+<table border="0" cellspacing="0" width="90%" cellpadding="0">
+  <tr>
+      <td width="771" valign="top" colspan="3">&#xA0;<b><font face="Verdana" size="1"> <script language="JavaScript">
+document.write(dayName[now.getDay()] + ", " + monName[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear()  );
+        </script>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;Leonard
+		Sullivan-Oklahoma County Assessor Public Access System (Live Records)
+      </font></b></td>
+  </tr>
+  <tr>
+      <td width="188" valign="top">
+		<img border="0" src="Top_leftSearch.gif" width="188" height="109"></td>
+      <td width="100%" background="../dynamic-free/images/stretch_cell_bg1.gif" valign="top">&#xA0;</td>
+      <td width="583"><nobr>
+		<img border="0" src="../dynamic-free/images/topnav_buffer1.gif" width="29" height="109"><a onmouseover="changeImages(&apos;image1&apos;, &apos;image1on&apos;)" onmouseout="changeImages(&apos;image1&apos;, &apos;image1off&apos;)" href="http://www.oklahomacounty.org/assessor"><img name="image1" src="../dynamic-free/images/home_button1.jpg" alt="County Assessor Home Page" border="0" width="118" height="109"></a><a onmouseover="changeImages(&apos;image2&apos;, &apos;image2on&apos;)" onmouseout="changeImages(&apos;image2&apos;, &apos;image2off&apos;)" href="mailto:micmor@oklahomacounty.org?subject=Oklahoma County Assessor Website"><img name="image2" src="../dynamic-free/images/contact_button.jpg" alt="Contact Webmaster" border="0" width="117" height="109"></a><a onmouseover="changeImages(&apos;image3&apos;, &apos;image3on&apos;)" onmouseout="changeImages(&apos;image3&apos;, &apos;image3off&apos;)" href="http://www.oklahomacounty.org/assessor/SearchMethod.htm"><img name="image3" src="../dynamic-free/images/search_button1.jpg" alt="Available Search Methods" border="0" width="128" height="109"></a><a onmouseover="changeImages(&apos;image4&apos;, &apos;image4on&apos;)" onmouseout="changeImages(&apos;image4&apos;, &apos;image4off&apos;)" href="http://www.oklahomacounty.org/assessor/GeneralInfo.htm"><img name="image4" src="../dynamic-free/images/faq_button.jpg" alt="Frequently Asked Questions" border="0" width="126" height="109"></a><img border="0" src="../dynamic-free/images/top_right.gif" width="36" height="109"></nobr></td>
+  </tr>
+</table><table border="0" cellspacing="0" width="90%" cellpadding="0">
+
+
+
+<div align="left">
+
+  <center>
+
+  </center></div></table>
+
+<div align="left">
+
+  <table border="0" cellpadding="0" style="border-collapse: collapse" width="32%" bgcolor="#FFFFFF">
+
+    <tr>
+
+      <td height="12" width="4" bgcolor="#FFFFFF">&#xA0;</td>
+
+      <td height="12" width="228" bgcolor="#FFFFFF" align="center">
+
+      &#xA0;</td>
+
+      <td height="12" width="227" align="center" bgcolor="#FFFFFF">
+
+      &#xA0;</td>
+
+      <td height="12" width="120" colspan="2" align="center" bgcolor="#FFFFFF">
+
+      &#xA0;</td>
+
+      <td height="12" width="263" align="center" bgcolor="#FFFFFF">
+
+      &#xA0;</td>
+
+      <td height="12" width="162" align="center" bgcolor="#FFFFFF">
+
+      &#xA0;</td>
+
+      <td height="12" width="8" bgcolor="#FFFFFF">&#xA0;</td>
+
+    </tr>
+
+    <tr>
+
+      <td height="20" width="4" bgcolor="#FFFFFF">&#xA0;</td>
+
+      <td height="20" width="228" bgcolor="#FFFFFF" align="center">
+
+      <a href="../guestBook.asp">
+
+                        <img border="0" id="img1" src="button41.jpg" height="25" width="138" alt="Guest Book" onmouseover="FP_swapImg(1,0,/*id*/&apos;img1&apos;,/*url*/&apos;button42.jpg&apos;)" onmouseout="FP_swapImg(0,0,/*id*/&apos;img1&apos;,/*url*/&apos;button41.jpg&apos;)" onmousedown="FP_swapImg(1,0,/*id*/&apos;img1&apos;,/*url*/&apos;button43.jpg&apos;)" onmouseup="FP_swapImg(0,0,/*id*/&apos;img1&apos;,/*url*/&apos;button42.jpg&apos;)" fp-style="fp-btn: Metal Tab 5; fp-proportional: 0" fp-title="Guest Book"></a></td>
+
+      <td height="20" width="227" align="center" bgcolor="#FFFFFF">
+
+      <a href="../taxrates.htm">
+
+                        <img border="0" id="img2" src="button44.jpg" height="25" width="138" alt="TXD Levies" onmouseover="FP_swapImg(1,0,/*id*/&apos;img2&apos;,/*url*/&apos;button45.jpg&apos;)" onmouseout="FP_swapImg(0,0,/*id*/&apos;img2&apos;,/*url*/&apos;button44.jpg&apos;)" onmousedown="FP_swapImg(1,0,/*id*/&apos;img2&apos;,/*url*/&apos;button46.jpg&apos;)" onmouseup="FP_swapImg(0,0,/*id*/&apos;img2&apos;,/*url*/&apos;button45.jpg&apos;)" fp-style="fp-btn: Metal Tab 5; fp-proportional: 0" fp-title="TXD Levies"></a></td>
+
+      <td height="20" width="120" colspan="2" align="center" bgcolor="#FFFFFF">
+
+      <a href="../glossary.htm">
+
+                        <img border="0" id="img3" src="button47.jpg" height="25" width="138" alt="Glossary" onmouseover="FP_swapImg(1,0,/*id*/&apos;img3&apos;,/*url*/&apos;button48.jpg&apos;)" onmouseout="FP_swapImg(0,0,/*id*/&apos;img3&apos;,/*url*/&apos;button47.jpg&apos;)" onmousedown="FP_swapImg(1,0,/*id*/&apos;img3&apos;,/*url*/&apos;button49.jpg&apos;)" onmouseup="FP_swapImg(0,0,/*id*/&apos;img3&apos;,/*url*/&apos;button48.jpg&apos;)" fp-style="fp-btn: Metal Tab 5; fp-proportional: 0" fp-title="Glossary"></a></td>
+
+      <td height="20" width="263" align="center" bgcolor="#FFFFFF">
+
+      <a href="http://oklahoma.latitudegeo.com/imf/sites/oklahoma/launch.html">
+
+                        <img border="0" id="img4" src="button4A.jpg" height="25" width="138" alt="Map/GIS Search" onmouseover="FP_swapImg(1,0,/*id*/&apos;img4&apos;,/*url*/&apos;button4B.jpg&apos;)" onmouseout="FP_swapImg(0,0,/*id*/&apos;img4&apos;,/*url*/&apos;button4A.jpg&apos;)" onmousedown="FP_swapImg(1,0,/*id*/&apos;img4&apos;,/*url*/&apos;button4C.jpg&apos;)" onmouseup="FP_swapImg(0,0,/*id*/&apos;img4&apos;,/*url*/&apos;button4B.jpg&apos;)" fp-style="fp-btn: Metal Tab 5; fp-proportional: 0" fp-title="Map/GIS Search"></a></td>
+
+      <td height="20" width="162" align="center" bgcolor="#FFFFFF">
+
+      <a href="DefaultSearch.asp">
+
+                        <img border="0" id="img5" src="button4D.jpg" height="25" width="138" alt="New Search" onmouseover="FP_swapImg(1,0,/*id*/&apos;img5&apos;,/*url*/&apos;button4E.jpg&apos;)" onmouseout="FP_swapImg(0,0,/*id*/&apos;img5&apos;,/*url*/&apos;button4D.jpg&apos;)" onmousedown="FP_swapImg(1,0,/*id*/&apos;img5&apos;,/*url*/&apos;button4F.jpg&apos;)" onmouseup="FP_swapImg(0,0,/*id*/&apos;img5&apos;,/*url*/&apos;button4E.jpg&apos;)" fp-style="fp-btn: Metal Tab 5; fp-proportional: 0" fp-title="New Search"></a></td>
+
+      <td height="20" width="8" bgcolor="#FFFFFF">&#xA0;&#xA0;&#xA0; </td>
+
+    </tr>
+
+    <tr>
+
+      <td height="12" width="4" bgcolor="#FFFFFF">&#xA0;</td>
+
+      <td colspan="3" bgcolor="#394A7B" style="border-style:solid; border-width:0px; " valign="top">
+
+      <font color="#FFFFFF"><b>&#xA0;</b><font size="2">Oklahoma
+
+      County Assessor Property Display</font></font></td>
+
+      <td colspan="3" bgcolor="#394A7B" style="border-style:solid; border-width:0px; ">
+
+      <p align="right"><font color="#FFFFFF" size="2">Screen Produced &#xA0;&#xA0;7/28/2016 7:05:59 AM&#xA0;</font></p></td>
+
+      <td height="12" width="8" bgcolor="#FFFFFF">&#xA0;</td>
+
+    </tr>
+
+    <tr>
+
+      <td height="12" width="4" bgcolor="#FFFFFF">&#xA0;</td>
+
+      <td colspan="6" style="border-style:solid; border-width:0px; " valign="top">
+
+      <table width="700" border="0" cellspacing="0" cellpadding="0">
+
+                        <thead>
+
+                        </thead>
+
+                        <tbody>
+
+                                    <tr>
+
+                                                <td style="border-left: 1px solid #EBEBEB">&#xA0;<b><font size="2">Account #:</font></b></td>
+
+                                                <td colspan="3"><font size="2" color="#FF0000">
+
+                                                R150662700&#xA0;&#xA0;&#xA0; </font>
+
+                                                <b><font size="2">
+
+                                                Type:</font></b><font size="2" color="#FF0000"> Exempt</font></td>
+
+                                                <td><b><font size="2">Physical Address:</font></b></td>
+
+                                                <td colspan="4" style="border-right: 1px solid #EBEBEB"><font size="2">
+
+                                                 </font></td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                                <td style="border-left: 1px solid #EBEBEB">
+
+                                                <font color="#3399FF">&#xA0;<b><font size="2">Business Name:</font></b></font></td>
+
+                                                <td colspan="3"><font size="2" color="#3399FF">
+
+                                                &#xA0;</font></td>
+
+                                                <td><font size="1">
+
+                                                <input type="button" name="loc7" onclick="window.open (&apos;http://oklahoma.latitudegeo.com/imf/imf.jsp?site=oklahoma&amp;qlyr=9&amp;qzoom=true&amp;qbuf=250&amp;qhlt=true&amp;qry=OKLAHOMA_SQL.PARCEL.PIN%3D%271413150662700%27&apos;);" value="Map Parcel" style="font-family:Times New Roman; color:#000000; font-size:9pt"></font></td>
+
+                                                <td colspan="4" style="border-right: 1px solid #EBEBEB"><font size="2">
+
+                                                &#xA0;</font></td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                                <td style="border-left: 1px solid #EBEBEB">&#xA0;<b><font size="2">Owner Name1:</font></b></td>
+
+                                                <td colspan="3"><font size="2">
+
+                                                NEHEMAH BAPTIST CHURCH INC</font></td>
+
+                                                <td><b><font size="2">1/4 Section #:</font></b></td>
+
+                                                <td colspan="4" style="border-right: 1px solid #EBEBEB"><font size="2">
+
+                                                1413</font></td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                                <td style="border-left: 1px solid #EBEBEB">&#xA0;<b><font size="2">Owner Name2:</font></b></td>
+
+                                                <td colspan="3"><font size="2">
+
+                                                &#xA0;</font></td>
+
+                                                <td><b><font size="2">Parent Account:</font></b></td>
+
+                                                <td colspan="4" style="border-right: 1px solid #EBEBEB"><font size="2">
+
+                                                  &#xA0;</font></td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                                <td style="border-left: 1px solid #EBEBEB">&#xA0;<b><font size="2">Mailing Address:</font></b></td>
+
+                                                <td colspan="3"><font size="2">
+
+                                                PO BOX 300245</font></td>
+
+                                                <td><b><font size="2">Taxing District:</font></b><font size="2">
+
+                                                </font></td>
+
+                                                <td colspan="4" style="border-right: 1px solid #EBEBEB"><font size="1">
+
+                                                <input type="button" name="loc8" onclick="window.open (&apos;http://www.oklahomacounty.org/assessor/taxrates.htm#552&apos;);" value="TXD 552" style="font-family:Times New Roman; color:#000000; font-size:8pt; float:left"></font></td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                                <td style="border-left: 1px solid #EBEBEB"><font size="2">&#xA0;&#xA0;
+
+                                                </font></td>
+
+                                                <td colspan="3"><font size="2">
+
+                                                &#xA0;</font></td>
+
+                                                <td><b><font size="2">School System:</font></b></td>
+
+                                                <td colspan="4" style="border-right: 1px solid #EBEBEB"><font size="2">
+
+                                                Mid-Del #52</font></td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                                <td style="border-left: 1px solid #EBEBEB">&#xA0;<b><font size="2">City,
+
+                                                St. &amp; Zip:</font></b></td>
+
+                                                <td colspan="3"><font size="2">
+
+                                                OKLAHOMA CITY, OK&#xA0;&#xA0; 73140</font></td>
+
+                                                <td><b><font size="2"># of Bldgs: </font></b><font size="2">
+
+                                                0</font></td>
+
+                                                <td colspan="4" style="border-right: 1px solid #EBEBEB"><b><font size="2">Acres:</font></b><font size="2">
+
+                                                                .4242</font></td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                                <td style="border-right:2px solid #FED907; border-top:2px solid #FED907; border-left:2px solid #FED907; " bgcolor="#FEF4BC"><font size="1">
+
+                                                <input type="button" name="loc14" onclick="window.open (&apos;http://www.oklahomacounty.org/assessor/Searches/AN-P_Real.asp?ParcelNumber=1413150662700&apos;);" value="Personal Property " style="font-family:Times New Roman; color:#000000; font-size:8pt; float:left"></font></td>
+
+                                                <td colspan="3" bgcolor="#394A7B" style="border: 2px solid #000000">
+
+                                                <p align="center"><font size="2" color="#FFFFFF">Property Value Information&#xA0;&#xA0; </font>
+
+                                                <font size="2">&#xA0;&#xA0;
+												<input type="button" name="loc18" onclick="window.open (&apos;http://www.oklahomacounty.org/assessor/Searches/AN-R_HistoricalView.asp?Accountno=R150662700&apos;);" value="Value History" style="font-family:Times New Roman; color:#0000FF; font-size:8pt;float:center"></font></p></td>
+
+                                                <td><b><font size="2">&#xA0;Lot Width:</font></b><font size="2"> 280</font></td>
+
+                                                <td colspan="4" style="border-right: 1px solid #EBEBEB">
+
+                                                <b><font size="2">Depth:</font></b><font size="2">&#xA0; 66</font></td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                                <td style="border-right:2px solid #FED907; border-bottom:2px solid #FED907; border-left:2px solid #FED907; " bgcolor="#FEF4BC">
+
+                                                <p align="center"><font size="1">Cross reference for<br>
+
+                                                Personal Property</font></p></td>
+
+                                                <td bgcolor="#394A7B" align="center" width="239" style="border-left: 2px solid #000000; border-bottom: 2px solid #000000" colspan="2"><font size="2" color="#FFFFFF">2015</font></td>
+
+                                                <td bgcolor="#394A7B" align="center" width="237" style="border-left: 2px solid #000000; border-right: 2px solid #000000; border-bottom: 2px solid #000000"><font size="2" color="#FFFFFF">2016</font></td>
+
+                                                <td bgcolor="#394A7B" style="border-right: 2px solid #000000; border-top: 2px solid #000000; border-bottom: 2px solid #000000">
+
+      <p align="center"><font size="2" color="#FFFFFF">Sketch</font></p></td>
+
+                                                <td bgcolor="#394A7B" colspan="4" style="border-right: 2px solid #000000; border-top: 2px solid #000000; border-bottom: 2px solid #000000">
+
+      <p align="center"><font size="2" color="#FFFFFF">&#xA0;Views&#xA0;<a target="_blank" title="Yahoo Maps" href="http://maps.yahoo.com/#q= ,&#xA0;"><img border="0" src="../images/YahooIcon.gif" width="29" height="17"></a>&#xA0;
+		<a target="_blank" title="Bing Maps" href="http://www.bing.com/maps/?v=2&amp;where1= , &#xA0;&amp;q= &#xA0;">
+		<img border="0" src="../images/BingMapsIcon.gif" width="59" height="17"></a>&#xA0;
+		<a target="_blank" title="Zillow" href="http://www.zillow.com/homes/ -&#xA0;_rb/">
+		<img border="0" src="../images/ZillowIcon.gif" width="20" height="17"></a>&#xA0;
+		<a target="_blank" title="Google Maps &amp; Street View" href="http://maps.google.com/maps?q= ,&#xA0;&amp;hl=en&amp;sll=37.0625,-95.677068&amp;sspn=42.310334,101.25&amp;t=h&amp;hnear= ,+&#xA0;,+Oklahoma">
+		<img border="0" src="../images/GoogleMapIcon.gif" width="17" height="17"></a></font></p></td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                                <td style="border-left: 1px solid #EBEBEB">&#xA0;<b><font size="2">Market Value</font></b></td>
+
+                                                <td align="right" width="239" style="border-left: 2px solid #000000" colspan="2"><font size="2">
+
+                                                               0&#xA0;&#xA0; </font></td>
+
+                                                <td align="right" width="237" style="border-left: 2px solid #000000; border-right: 2px solid #000000">
+
+                                                <font size="2">
+
+                                                               0&#xA0;&#xA0; </font></td>
+
+
+
+                                                <td rowspan="7" bgcolor="#FFFFCC" height="84" style="border-right: 2px solid #000000; border-bottom: 2px solid #000000">
+
+                                                <p align="center">
+
+      <font size="2">
+
+      <a target="_blank" href="Sketches/sketchfile/1413/R150662700001.jpg">
+
+      <img border="2" src="Sketches/sketchfile/1413/R150662700001.jpg" width="100" height="80" align="top" vspace="1"></a></font><br>
+
+                                                <b><font size="2">If Available</font></b></p></td>
+
+                                                <td rowspan="3" align="center" bgcolor="#FFFFCC">
+
+      <font size="2">
+
+                        <a target="_blank" href="sketches/picfile/1413/R150662700001mA.jpg">
+
+                        <img border="1" src="sketches/picfile/1413/R150662700001mA.jpg" align="middle" width="35" height="27" hspace="1" vspace="4"></a></font><font size="1"><br>
+
+                        2016</font></td>
+
+                                                <td rowspan="3" align="center" bgcolor="#FFFFCC">
+
+      <font size="2">
+
+                        <a target="_blank" href="sketches/picfile/1413/R150662700001nA.jpg">
+
+                        <img border="1" src="sketches/picfile/1413/R150662700001nA.jpg" align="middle" width="35" height="27" hspace="1" vspace="4"></a></font><font size="1"><br>
+
+                        2015</font></td>
+
+                                                <td rowspan="3" align="center" bgcolor="#FFFFCC">
+
+      <font size="2">
+
+                        <a target="_blank" href="sketches/picfile/1413/R150662700001oA.jpg">
+
+                        <img border="1" src="sketches/picfile/1413/R150662700001oA.jpg" align="middle" width="35" height="27" hspace="1" vspace="4"></a></font><font size="1"><br>
+
+                        2014</font></td>
+
+                                                <td rowspan="3" align="center" bgcolor="#FFFFCC">
+
+      <font size="2">
+
+                        <a target="_blank" href="sketches/picfile/1413/R150662700001pA.jpg">
+
+                        <img border="1" src="sketches/picfile/1413/R150662700001pA.jpg" align="middle" width="35" height="27" hspace="1" vspace="4"></a></font><font size="1"><br>
+
+                        2013</font></td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                                <td style="border-left: 1px solid #EBEBEB">
+
+      <b><font size="2">&#xA0;<a href="../5.htm">Taxable Market</a></font></b></td>
+
+                                                <td align="right" width="239" style="border-left: 2px solid #000000" colspan="2"><font size="2">
+
+                                                               0&#xA0;&#xA0; </font></td>
+
+                                                <td align="right" width="237" style="border-left: 2px solid #000000; border-right: 2px solid #000000">
+
+                                                <font size="2">
+
+                                                               0&#xA0;&#xA0; </font></td>
+
+
+
+                                    </tr>
+
+                                    <tr>
+
+                                                <td style="border-left: 1px solid #EBEBEB">
+
+      <b><font size="2">&#xA0;Gross Assessed</font></b></td>
+
+                                                <td align="right" width="239" style="border-left: 2px solid #000000; border-bottom: 1px solid #EBEBEB" colspan="2"><font size="2">
+
+                                                               0&#xA0;&#xA0; </font></td>
+
+                                                <td align="right" width="237" style="border-left: 2px solid #000000; border-right: 2px solid #000000; border-bottom: 1px solid #EBEBEB">
+
+                                                <font size="2">
+
+                                                               0&#xA0;&#xA0; </font></td>
+
+
+
+                                    </tr>
+
+                                    <tr>
+
+                                                <td style="border-left: 1px solid #EBEBEB">
+
+      <b><font size="2">&#xA0;</font></b><font size="2"><b>Exemptions</b></font></td>
+
+                                                <td align="right" width="239" style="border-left: 2px solid #000000" colspan="2"><font size="2">
+
+                                                <font color="#FF0000">-               0</font>&#xA0;&#xA0; </font></td>
+
+                                                <td align="right" width="237" style="border-left: 2px solid #000000; border-right: 2px solid #000000"><font size="2">
+
+                                                <font color="#FF0000">-               0</font>&#xA0;&#xA0; </font></td>
+
+                                                <td rowspan="3" align="center" bgcolor="#FFFFCC">
+
+      <font size="2">
+
+                        <a target="_blank" href="sketches/picfile/1413/R150662700001qA.jpg">
+
+                        <img border="1" src="sketches/picfile/1413/R150662700001qA.jpg" align="middle" width="35" height="27" hspace="1" vspace="4"></a></font><font size="1"><br>
+
+                        2012</font></td>
+
+                                                <td rowspan="3" align="center" bgcolor="#FFFFCC">
+
+      <font size="2"><a target="_blank" href="sketches/picfile/1413/R150662700001rA.jpg">
+
+                        <img border="1" src="sketches/picfile/1413/R150662700001rA.jpg" align="middle" width="35" height="27" hspace="1" vspace="4"></a></font><font size="1"><br>
+
+                        2011</font></td>
+
+                                                <td rowspan="3" align="center" bgcolor="#FFFFCC">
+
+      <font size="2">
+
+                        <a target="_blank" href="sketches/picfile/1413/R150662700001sA.jpg">
+
+                        <img border="1" src="sketches/picfile/1413/R150662700001sA.jpg" align="middle" width="35" height="27" hspace="1" vspace="4"></a></font><font size="1"><br>
+
+                        2010</font></td>
+
+                                                <td rowspan="3" align="center" bgcolor="#FFFFCC">
+
+      <font size="2"><a target="_blank" href="sketches/picfile/1413/R150662700001tA.jpg">
+
+                        <img border="1" src="sketches/picfile/1413/R150662700001tA.jpg" align="middle" width="35" height="27" hspace="1" vspace="4"></a></font><font size="1"><br>
+
+                        2009</font></td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                                <td style="border-left: 1px solid #EBEBEB">
+
+      <b><font size="2">&#xA0;Net Assessed</font></b></td>
+
+                                                <td align="right" width="239" style="border-left: 2px solid #000000; border-bottom: 1px solid #EBEBEB" colspan="2"><font size="2">
+
+                                                               0&#xA0;&#xA0; </font></td>
+
+                                                <td align="right" width="237" style="border-left: 2px solid #000000; border-right: 2px solid #000000; border-bottom: 1px solid #EBEBEB">
+
+                                                <font size="2">
+
+                                                               0&#xA0;&#xA0; </font></td>
+
+
+
+
+                                    </tr>
+
+                                    <tr>
+
+                                                <td style="border-left: 1px solid #EBEBEB">
+
+                                                <font size="2">&#xA0;</font><b><font size="2">Tax Rate</font></b></td>
+
+                                                <td align="right" width="239" style="border-left: 2px solid #000000; border-bottom: 2px solid #000000" colspan="2"><font size="2">
+
+                                                 119.81&#xA0;&#xA0; </font></td>
+
+                                                <td align="right" width="237" style="border-bottom:2px solid #000000; border-left:2px solid #000000; border-right:2px solid #000000; ">
+
+                                                <font size="2">
+
+                                                Nov. 2016&#xA0;&#xA0; </font></td> </tr></tbody></table></td>
+
+
+
+                                    </tr>
+
+                                    <tr>
+
+                                                <td style="border-left: 1px solid #EBEBEB">
+
+                                                <font size="2">&#xA0;</font><b><font size="2">Land Value</font></b></td>
+
+                                                <td width="239" align="right" colspan="2"><font size="2">
+
+                                                &#xA0;&#xA0; </font></td>
+
+                                                <td align="right" width="237" style="border-left:2px solid #000000; border-right:2px solid #000000; border-bottom:2px solid #000000; "><font size="2">
+
+                                                               0&#xA0;&#xA0; </font></td>
+
+                                                <td colspan="4" bgcolor="#394A7B" style="border-right: 2px solid #000000; border-top: 2px solid #000000; border-bottom: 2px solid #000000">
+
+                                                <p align="center">
+
+      <i><font size="1" color="#FFFFFF">*All Photos may
+
+                        not be Available</font></i></p></td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                                <td bgcolor="#FFFFCC" style="border-left: 2px solid #FF0000; border-top: 2px solid #FF0000; border-bottom: 2px solid #FF0000">
+
+                                                <font size="1"><input type="button" name="loc10" onclick="window.open (&apos;http://www.oklahomacounty.org/assessor/TaxSavingsMeasures.htm&apos;);" value="2015 Tax Savings " style="font-family:Times New Roman; color:#000000; font-size:8pt; float:left"></font></td>
+
+                                                <td width="120" bgcolor="#FFFFCC" style="border-top: 2px solid #FF0000; border-bottom: 2px solid #FF0000">
+
+                                                <p align="left"><font size="2">
+
+                                                &#xA0;See details</font></p></td>
+
+                                                <td width="119" bgcolor="#FFFFCC" style="border-right: 2px solid #FF0000; border-top: 2px solid #FF0000; border-bottom: 2px solid #FF0000">
+
+                                                <p align="right"><font size="2">
+
+                                                               $0&#xA0;&#xA0; </font></p></td>
+
+                                                <td width="237">&#xA0;</td>
+
+                                                <td colspan="5" style="border-right: 1px solid #EBEBEB">
+
+                                                <font size="2">
+
+                                                <input type="button" name="loc9" onclick="window.open (&apos;http://www.oklahomacounty.org/treasurer/AccountNumberResults.asp?PropertyID=150662700&apos;);" value="Click to View taxes on this property" style="float: left; font-family:Times New Roman; color:#000000; font-size:9pt"></font></td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                                <td style="border-left: 1px solid #EBEBEB" colspan="2">
+
+
+
+                                                </td>
+
+                                                <td colspan="6"><font size="2">
+
+                                                <b>Section:</b>&#xA0;
+
+                                                4
+
+                                                <b>&#xA0;Township:&#xA0; </b>11N
+
+                                                <b>&#xA0;Range: </b> &#xA0;2W
+
+                                                <b>&#xA0;QTR:&#xA0; </b>
+
+                                                NE<b>&#xA0;
+
+                                                QTR QTR:&#xA0; </b>&#xA0;</font></td>
+
+                                                <td style="border-right: 1px solid #EBEBEB">&#xA0; </td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                                <td style="border-left: 1px solid #EBEBEB">&#xA0;<b><font size="2">Subdivision/Legal<br>
+
+&#xA0;Description:</font></b></td>
+
+                                                <td colspan="8" bgcolor="#FFFFCC" style="border-right:2px solid #000000; border-left:2px solid #000000; border-top:2px solid #000000; "><font size="2">
+
+                                                &#xA0;</font><font style="font-size: 9pt"><a href="SubdivSearch.asp?SubDivision=FOX+%26+HOWARD+ADD">FOX &amp; HOWARD ADD</a>&#xA0;&#xA0; Block:
+
+                                                003&#xA0;
+
+                                                Lot: 005</font><font style="font-size: 8pt"> </font>
+
+                                                <font size="2">&#xA0;<input type="button" name="loc17" onclick="window.open (&apos;http://www.oklahomacounty.org/assessor/Searches/SubdivSearchSalesDate.asp?SUBNO=15066&apos;);" value="Subdivision Sales" style="font-family:Times New Roman; color:#0000FF; font-size:8pt;float:center"></font></td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                                <td style="border-left: 1px solid #EBEBEB" valign="top">
+
+      <b><font size="2">&#xA0;</font></b></td>
+
+                                                <td colspan="8" style="border-left: 2px solid #000000; border-right: 2px solid #000000; border-bottom: 2px solid #000000"><font size="2">
+
+                                                &#xA0;&#xA0;</font></td>
+
+                                    </tr>
+
+
+
+                        </table>
+
+
+
+      <td height="12" width="8" bgcolor="#FFFFFF">&#xA0;</td>
+
+
+
+
+
+    <tr>
+
+      <td height="12" width="4" bgcolor="#FFFFFF">&#xA0;</td>
+
+      <td colspan="6" bgcolor="#FFFFFF" valign="top">
+
+      <table width="700" border="0" cellpadding="0" style="border-collapse: collapse">
+
+                        <thead>
+
+                        </thead>
+
+                        <tbody>
+
+                                    <tr><td colspan="7" align="LEFT" width="100%">No Comparative Sales records returned.</td></tr></tbody>
+
+                        </table>
+
+                        </td>
+
+
+
+      <td height="12" width="8" bgcolor="#FFFFFF">&#xA0;</td>
+
+    </tr>
+
+    <tr>
+
+      <td height="15" width="4" bgcolor="#FFFFFF">&#xA0;</td>
+
+      <td height="15" width="700" colspan="6" bgcolor="#394A7B" style="border-top: 2px ridge #808080">
+
+      <b>&#xA0; <font color="#FFFFFF" size="2">Last Mailed Notice of Value
+
+                        (N.O.V.) Information </font> </b>
+
+      </td>
+
+      <td height="15" width="8" bgcolor="#FFFFFF">&#xA0;</td>
+
+    </tr>
+
+    <tr>
+
+      <td height="12" width="4" bgcolor="#FFFFFF">&#xA0;</td>
+
+      <td height="12" width="700" colspan="6" bgcolor="#FFFFFF">
+
+      <table width="700" border="0" style="border-collapse: collapse" bordercolor="#111111" cellpadding="0" cellspacing="0">
+
+  <thead>
+
+    <tr>
+
+      <td align="center" bgcolor="#E5E5E5" style="border: 1px solid #535353"><b><font size="2">Notice Date</font></b></td>
+
+      <td align="center" bgcolor="#E5E5E5" style="border: 1px solid #535353"><b><font size="2">Market Value</font></b></td>
+
+      <td align="center" bgcolor="#E5E5E5" style="border: 1px solid #535353"><b><font size="2">Taxable Market</font></b></td>
+
+      <td align="center" bgcolor="#E5E5E5" style="border: 1px solid #535353"><b><font size="2">Adjustments/Exemptions</font></b></td>
+
+      <td align="center" bgcolor="#E5E5E5" style="border: 1px solid #535353"><b><font size="2">Net Assessed Value</font></b></td>
+
+    </tr>
+
+  </thead>
+
+  <tbody>
+
+    <tr>
+
+      <td style="border: 1px solid #C0C0C0">
+
+      <p align="center">
+
+      <font size="2">
+
+      4/9/1987</font></p></td>
+
+      <td style="border: 1px solid #C0C0C0">
+
+      <p align="center">
+
+      <font size="2">
+
+                     0</font></p></td>
+
+      <td style="border: 1px solid #C0C0C0">
+
+      <p align="center">
+
+      <font size="2">
+
+                     0</font></p></td>
+
+      <td style="border: 1px solid #C0C0C0">
+
+      <p align="center">
+
+      <font size="2">
+
+                     0</font></p></td>
+
+      <td style="border: 1px solid #C0C0C0">
+
+      <p align="center">
+
+      <font size="2">
+
+                     0</font></p></td>
+
+    </tr>
+
+    </tbody>
+
+</table>
+
+</td>
+
+<td height="12" width="8" bgcolor="#FFFFFF">&#xA0;</td>
+
+    </tr>
+
+    <tr>
+
+      <td height="15" width="4" bgcolor="#FFFFFF">&#xA0;</td>
+
+      <td height="15" width="700" colspan="6" bgcolor="#394A7B">
+
+      <b>&#xA0;<font size="2"> </font><font size="2" color="#FFFFFF">Sales Documents/Deed History </font>
+		<font size="2" color="#FFFF00"><i>&#xA0;&#xA0;&#xA0;&#xA0; </i></font></b></td>
+
+
+      <td height="15" width="8" bgcolor="#FFFFFF">&#xA0;</td>
+
+      <form name="form3">
+
+                        </form>
+
+
+
+
+
+      <td height="15" width="8" bgcolor="#FFFFFF">&#xA0;</td>
+
+    </tr>
+
+    <tr>
+
+      <td height="12" width="4" bgcolor="#FFFFFF">&#xA0;</td>
+
+      <td height="12" width="700" colspan="6" bgcolor="#FFFFFF">
+
+      <table width="700" border="0" cellspacing="0" cellpadding="0">
+
+                        <thead>
+
+                                    <tr>
+
+                                                <th style="border: 1px solid #000000" bgcolor="#EBEBEB"><b>
+
+                                                <font size="2">Date</font></b></th>
+
+                                                <th style="border-right:1px solid #000000; border-top:1px solid #000000; border-bottom:1px solid #000000; " bgcolor="#EBEBEB">
+
+                                                <font size="2">View</font></th>
+
+                                                <th style="border-right:1px solid #000000; border-top:1px solid #000000; border-bottom:1px solid #000000; " bgcolor="#EBEBEB"><b>
+
+                                                <font size="2">&#xA0;Type </font></b></th>
+
+                                                <th style="border-right:1px solid #000000; border-top:1px solid #000000; border-bottom:1px solid #000000; " bgcolor="#EBEBEB"><b>
+
+                                                <font size="2">&#xA0;Book-Page </font></b></th>
+
+                                                <th style="border-right:1px solid #000000; border-top:1px solid #000000; border-bottom:1px solid #000000; " bgcolor="#EBEBEB"><b>
+
+                                                <font size="2">&#xA0;Price </font></b></th>
+
+                                                <th style="border-right:1px solid #000000; border-top:1px solid #000000; border-bottom:1px solid #000000; " bgcolor="#EBEBEB"><b>
+
+                                                <font size="2">Grantor</font></b></th>
+
+                                                <th style="border-right:1px solid #000000; border-top:1px solid #000000; border-bottom:1px solid #000000; " bgcolor="#EBEBEB"><b>
+
+                                                <font size="2">Grantee</font></b></th>
+
+                                    </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                                    <tr><td colspan="9" align="LEFT" width="100%">No Sales Documents returned.</td></tr></tbody>
+
+                        </table>
+
+
+
+      </td><td height="12" width="8" bgcolor="#FFFFFF">&#xA0;</td>
+
+    </tr>
+
+    <tr>
+
+      <td height="15" width="4" bgcolor="#FFFFFF">&#xA0;</td>
+
+      <td height="15" width="700" colspan="6" bgcolor="#394A7B">
+
+      <b>&#xA0;<font size="2"> </font><font size="2" color="#FFFFFF">Non Sales Documents/Deed History </font>
+		<font size="2" color="#FFFF00"><i>&#xA0;
+		</i></font></b></td>
+
+
+      <td height="15" width="8" bgcolor="#FFFFFF">&#xA0;</td>
+
+    </tr>
+
+    <tr>
+
+      <td height="12" width="4" bgcolor="#FFFFFF">&#xA0;</td>
+
+      <td height="12" width="700" colspan="6" bgcolor="#FFFFFF">
+
+      <table width="700" border="0" cellspacing="0" cellpadding="0">
+
+                        <thead>
+
+                                    <tr>
+
+                                                <th bgcolor="#EBEBEB" style="border: 1px solid #000000"><b>
+
+                                                <font size="2">Date</font></b></th>
+
+                                                <th bgcolor="#EBEBEB" style="border-right: 1px solid #000000; border-top: 1px solid #000000; border-bottom: 1px solid #000000">
+
+                                                <font size="2">View</font></th>
+
+                                                <th bgcolor="#EBEBEB" style="border-right: 1px solid #000000; border-top: 1px solid #000000; border-bottom: 1px solid #000000">
+
+                                                <b><font size="2">Type</font></b></th>
+
+                                                <th bgcolor="#EBEBEB" style="border-right: 1px solid #000000; border-top: 1px solid #000000; border-bottom: 1px solid #000000">
+
+                                                <b><font size="2">Book-Page</font></b></th>
+
+                                                <th bgcolor="#EBEBEB" style="border-right: 1px solid #000000; border-top: 1px solid #000000; border-bottom: 1px solid #000000">
+
+                                                <b><font size="2">Grantor</font></b></th>
+
+                                                <th bgcolor="#EBEBEB" style="border-right: 1px solid #000000; border-top: 1px solid #000000; border-bottom: 1px solid #000000">
+
+                                                <b><font size="2">Grantee</font></b></th>
+
+                                    </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                                    <tr>
+
+                                                <td style="border-left: 1px solid #C0C0C0; border-right: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0">
+
+                                                <p align="right"><font size="2">&#xA0;1/15/2016 </font></p></td>
+
+                                                <td style="border-right: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0" align="center" bgcolor="#FFFFCC"><font size="1">
+
+                                                <input type="button" name="loc12" onclick="window.open (&apos;http://clerkpi.oklahomacounty.org/ImageLoad.aspx?sk=20160304010318990&amp;ref=f4fad4de-55f4-4aac-8eca-e584f06d4ef8&apos;);" value="&gt;" style="font-family:Times New Roman; color:#000000; font-size:8pt; float:center; font-weight:800"></font></td>
+
+                                                <td style="border-right: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0">
+
+                                                <p align="center"><font size="2">
+
+                                                <a target="_blank" href="../glossary.htm#16">
+
+                                                16</a></font></p></td>
+
+                                                <td style="border-right: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0">
+
+                                                <p align="center"><font size="2"><a target="_blank" href="http://countyclerk.oklahomacounty.org/roam/search.do?indexName=okopr&amp;templateName=Main&amp;searchQuery=Book%3A%2213060%22+AND+Page%3A%22561%22&amp;lq=%23Book%3A%2213060%22~5%23+AND+%23Page%3A%22561%22~5%23&amp;searchType=1&amp;sortBy=RecDateFilte&amp;desc=Y&amp;q=PartySeq%3A%221%2C0%22%2Cseq%3A%221%2C0%22%2CRoleFilter%3A%221%2C0%22&amp;searchable=%&gt;
+
+
+">
+
+                                                13060-561</a></font></p></td>
+
+                                                <td style="border-right: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0">
+
+                                                <p align="center"><font style="font-size: 8pt">
+
+                                                FIFTH STREET CHURCH OF CHRIST</font></p></td>
+
+                                                <td style="border-right: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0">
+
+                                                <p align="center"><font style="font-size: 8pt">
+
+                                                NEHEMAH BAPTIST CHURCH INC </font></p></td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                                <td style="border-left: 1px solid #C0C0C0; border-right: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0">
+
+                                                <p align="right"><font size="2">&#xA0;11/1/1977 </font></p></td>
+
+                                                <td style="border-right: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0" align="center" bgcolor="#FFFFCC"><font size="1">
+
+                                                <input type="button" name="loc12" onclick="window.open (&apos;http://clerkpi.oklahomacounty.org/ImageLoad.aspx?sk=B44150040&amp;ref=f4fad4de-55f4-4aac-8eca-e584f06d4ef8&apos;);" value="&gt;" style="font-family:Times New Roman; color:#000000; font-size:8pt; float:center; font-weight:800"></font></td>
+
+                                                <td style="border-right: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0">
+
+                                                <p align="center"><font size="2">
+
+                                                <a target="_blank" href="../glossary.htm#HIST DOC">
+
+                                                HIST DOC</a></font></p></td>
+
+                                                <td style="border-right: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0">
+
+                                                <p align="center"><font size="2"><a target="_blank" href="http://countyclerk.oklahomacounty.org/roam/search.do?indexName=okopr&amp;templateName=Main&amp;searchQuery=Book%3A%224415%22+AND+Page%3A%2240%22&amp;lq=%23Book%3A%224415%22~5%23+AND+%23Page%3A%2240%22~5%23&amp;searchType=1&amp;sortBy=RecDateFilte&amp;desc=Y&amp;q=PartySeq%3A%221%2C0%22%2Cseq%3A%221%2C0%22%2CRoleFilter%3A%221%2C0%22&amp;searchable=%&gt;
+
+
+">
+
+                                                4415-40</a></font></p></td>
+
+                                                <td style="border-right: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0">
+
+                                                <p align="center"><font style="font-size: 8pt">
+
+                                                &#xA0;</font></p></td>
+
+                                                <td style="border-right: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0">
+
+                                                <p align="center"><font style="font-size: 8pt">
+
+                                                FIFTH STREET CHURCH</font></p></td>
+
+                                    </tr>
+
+                                    </tbody>
+
+                        </table>
+
+</td>
+
+      <td height="12" width="8" bgcolor="#FFFFFF">&#xA0;</td>
+
+    </tr>
+
+    <tr>
+
+      <td height="15" width="4" bgcolor="#FFFFFF">&#xA0;</td>
+
+      <td height="15" width="700" colspan="6" bgcolor="#394A7B">
+
+      <b>&#xA0; <font color="#FFFFFF" size="2">Account Status/Adjustments/Exemptions</font></b></td>
+
+      <td height="15" width="8" bgcolor="#FFFFFF">&#xA0;</td>
+
+    </tr>
+
+    <tr>
+
+      <td height="12" width="4" bgcolor="#FFFFFF">&#xA0;</td>
+
+      <td height="12" width="700" colspan="6" bgcolor="#FFFFFF"><table border="0">
+
+
+
+
+
+
+
+</table>
+
+<table width="700" border="0" style="border-collapse: collapse" bordercolor="#111111" cellpadding="0" cellspacing="0">
+
+  <thead>
+
+    <tr>
+
+      <td align="center" bgcolor="#E5E5E5" style="border: 1px solid #535353"><b><font size="2">
+
+                        Status/Adjustment/Exemption Type</font></b></td>
+
+      <td align="center" bgcolor="#E5E5E5" style="border: 1px solid #535353"><b><font size="2">Effective Year</font></b></td>
+
+      <td align="center" bgcolor="#E5E5E5" style="border: 1px solid #535353"><b><font size="2">Assessed Amount</font></b></td>
+
+    </tr>
+
+  </thead>
+
+  <tbody>
+
+    <tr>
+
+      <td style="border: 1px solid #C0C0C0">
+
+      <p align="center">
+
+      <font size="2">
+
+      5% Capped Account</font></p></td>
+
+      <td style="border: 1px solid #C0C0C0">
+
+      <p align="center">
+
+      <font size="2">
+
+      2000</font></p></td>
+
+      <td style="border: 1px solid #C0C0C0">
+
+      <p align="center">
+
+      <font size="2">
+
+       </font></p></td>
+
+    </tr>
+
+    </tbody>
+
+</table>
+
+</td>
+
+      <td height="12" width="8" bgcolor="#FFFFFF">&#xA0;</td>
+
+    </tr>
+
+    <tr>
+
+      <td height="15" width="4" bgcolor="#FFFFFF">&#xA0;</td>
+
+      <td height="15" width="700" colspan="6" bgcolor="#394A7B">
+
+      <b>
+
+      <font color="#FFFFFF">&#xA0; <font size="2">Click on building number to access detailed
+
+                        information:</font></font></b></td>
+
+      <td height="15" width="8" bgcolor="#FFFFFF">&#xA0;</td>
+
+    </tr>
+
+    <tr>
+
+      <td height="12" width="4" bgcolor="#FFFFFF">&#xA0;</td>
+
+      <td height="12" width="700" colspan="6" bgcolor="#FFFFFF">
+
+      <table width="700" border="0" style="border-collapse: collapse" bordercolor="#111111" cellpadding="0" cellspacing="0">
+
+  <thead>
+
+    <tr>
+
+      <td align="center" bgcolor="#E5E5E5" style="border: 1px solid #535353"><b><font size="2">Bldg #</font></b></td>
+
+      <td align="center" bgcolor="#E5E5E5" style="border: 1px solid #535353"><b><font size="2">Built As</font></b></td>
+
+      <td align="center" bgcolor="#E5E5E5" style="border: 1px solid #535353"><b><font size="2">Type</font></b></td>
+
+      <td align="center" bgcolor="#E5E5E5" style="border: 1px solid #535353"><b><font size="2">Year Built</font></b></td>
+
+      <td align="center" bgcolor="#E5E5E5" style="border: 1px solid #535353"><b><font size="2">SQFT</font></b></td>
+
+      <td align="center" bgcolor="#E5E5E5" style="border: 1px solid #535353"><b><font size="2">Stories</font></b></td>
+
+    </tr>
+
+  </thead>
+
+  <tbody>
+
+    <tr><td colspan="20" align="LEFT" width="100%">No Building Detail record returned.</td></tr></tbody>
+
+</table>
+
+</td>
+
+      <td height="12" width="8" bgcolor="#FFFFFF">&#xA0;</td>
+
+    </tr>
+
+    <tr>
+
+      <td height="12" width="4">
+
+      <font size="1">&#xA0;</font></td>
+
+      <td height="12" width="700" colspan="6">
+
+      <font size="1">&#xA0; </font></td>
+
+      <td height="12" width="8">
+
+      <font size="1">&#xA0; </font></td>
+
+    </tr>
+
+
+
+  </div>
+
+
+
+<script type="text/javascript">
+//<![CDATA[
 (function() {
-var z="";var b="7472797B766172207868723B76617220743D6E6577204461746528292E67657454696D6528293B766172207374617475733D227374617274223B7661722074696D696E673D6E65772041727261792833293B77696E646F772E6F6E756E6C6F61643D66756E6374696F6E28297B74696D696E675B325D3D22723A222B286E6577204461746528292E67657454696D6528292D74293B646F63756D656E742E637265617465456C656D656E742822696D6722292E7372633D222F5F496E63617073756C615F5265736F757263653F4553324C555243543D363726743D373826643D222B656E636F6465555249436F6D706F6E656E74287374617475732B222028222B74696D696E672E6A6F696E28292B222922297D3B69662877696E646F772E584D4C4874747052657175657374297B7868723D6E657720584D4C48747470526571756573747D656C73657B7868723D6E657720416374697665584F626A65637428224D6963726F736F66742E584D4C4854545022297D7868722E6F6E726561647973746174656368616E67653D66756E6374696F6E28297B737769746368287868722E72656164795374617465297B6361736520303A7374617475733D6E6577204461746528292E67657454696D6528292D742B223A2072657175657374206E6F7420696E697469616C697A656420223B627265616B3B6361736520313A7374617475733D6E6577204461746528292E67657454696D6528292D742B223A2073657276657220636F6E6E656374696F6E2065737461626C6973686564223B627265616B3B6361736520323A7374617475733D6E6577204461746528292E67657454696D6528292D742B223A2072657175657374207265636569766564223B627265616B3B6361736520333A7374617475733D6E6577204461746528292E67657454696D6528292D742B223A2070726F63657373696E672072657175657374223B627265616B3B6361736520343A7374617475733D22636F6D706C657465223B74696D696E675B315D3D22633A222B286E6577204461746528292E67657454696D6528292D74293B6966287868722E7374617475733D3D323030297B706172656E742E6C6F636174696F6E2E72656C6F616428297D627265616B7D7D3B74696D696E675B305D3D22733A222B286E6577204461746528292E67657454696D6528292D74293B7868722E6F70656E2822474554222C222F5F496E63617073756C615F5265736F757263653F535748414E45444C3D313531393231383639383831323039383134312C31343236333834303939303134353637363330392C313432333934383337333933313036323638332C313530383736222C66616C7365293B7868722E73656E64286E756C6C297D63617463682863297B7374617475732B3D6E6577204461746528292E67657454696D6528292D742B2220696E6361705F6578633A20222B633B646F63756D656E742E637265617465456C656D656E742822696D6722292E7372633D222F5F496E63617073756C615F5265736F757263653F4553324C555243543D363726743D373826643D222B656E636F6465555249436F6D706F6E656E74287374617475732B222028222B74696D696E672E6A6F696E28292B222922297D3B";for (var i=0;i<b.length;i+=2){z=z+parseInt(b.substring(i, i+2), 16)+",";}z = z.substring(0,z.length-1); eval(eval('String.fromCharCode('+z+')'));})();
-</script></head>
-<body>
-<iframe style="display:none;visibility:hidden;" src="//content.incapsula.com/jsTest.html" id="gaIframe"></iframe>
-</body></html>
+var _analytics_scr = document.createElement('script');
+_analytics_scr.type = 'text/javascript'; _analytics_scr.async = true; _analytics_scr.src = '/_Incapsula_Resource?SWJIYLWA=2977d8d74f63d7f8fedbea018b7a1d05&ns=3';
+var _analytics_elem = document.getElementsByTagName('script')[0]; _analytics_elem.parentNode.insertBefore(_analytics_scr, _analytics_elem);
+})();
+// ]]>
+</script></body>
+
+
+
+</html>

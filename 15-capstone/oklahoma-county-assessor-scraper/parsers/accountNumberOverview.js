@@ -11,5 +11,5 @@ function parseAccountNumbers(body) {
 }
 
 module.exports = {
-  parseAccountNumers: parseAccountNumbers
+  parseAccountNumbers: parseAccountNumbers
 }
