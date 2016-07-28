@@ -3,8 +3,11 @@ var accountNumberDetail = require('./accountNumberDetail')
 function upsert(item, callback) {
   accountNumberDetail.findOneAndUpdate(
     {accountNumber: item.accountNumber},
-    {accountNumber: item.accountNumber,
-      physicalAddress: item.physicalAddress},
+    {
+      physicalAddress: item.physicalAddress,
+      taxableMarket: item.taxableMarket,
+      schoolDistrict: item.schoolDistrict
+    },
     {upsert: true},
     callback
   )

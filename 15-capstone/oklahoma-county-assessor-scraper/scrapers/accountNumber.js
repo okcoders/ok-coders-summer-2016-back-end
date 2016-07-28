@@ -89,21 +89,20 @@ function requestAccountNumberPage(accountNumber) {
 
 function parseAccountNumberPage(err, res, body) {
   var $ = cheerio.load(body)
-  console.log($.html())
-  var account = $('tbody')
   var accountNumberParent = $('td:contains("Account #:")')
   var accountNumber = _.trim(accountNumberParent[1].next.next.children[0].children[0].data)
-  // var physicalAddressParent = $('td:contains("Physical Address")')
-  // var physicalAddress = physicalAddressParent[1].next.next.children[0].children[0].data
-  // var schoolParent = $('td:contains("School System:")')
-  // var school = physicalAddressParent[1].next.next.children[0]
-  // var taxParent = $('td:contains("Taxable Market")')
-  // var tax = physicalAddressParent[1].next.next.children[0]
-  console.log('account number:', accountNumber)
-  // console.log('address:', physicalAddress)
-  // console.log('tax', tax)
-  // console.log('school', school)
-  accountNumberDetailUpsert.upsert({accountNumber: accountNumber}, upsertCallback)
+  var physicalAddressParent = $('td:contains("Physical Address")')
+  var physicalAddress = _.trim(physicalAddressParent[1].next.next.children[0].children[0].data)
+  var schoolParent = $('td:contains("School System:")')
+  var school = _.trim(schoolParent[1].next.next.children[0].children[0].data)
+  var taxParent = $('td:contains("Taxable Market")')
+  var tax = _.trim(taxParent[1].next.next.children[0].children[0].data)
+  accountNumberDetailUpsert.upsert(
+    { accountNumber: accountNumber,
+      physicalAddress: physicalAddress,
+      taxableMarket: tax,
+      schoolDistrict: school},
+    upsertCallback)
 }
 
 function upsertCallback(err, data) {
