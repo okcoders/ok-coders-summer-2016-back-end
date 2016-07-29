@@ -20,7 +20,7 @@ Modify the simple file reader we built in class to accept a file path from the c
 
 Example Usage:
 
-	$ node reader.js relative/path/to/file
+    $ node reader.js relative/path/to/file
 
 Test it with text files on your computer. Try the "test.txt" file first. Remember you can use `..` to go up directories. When you get it working you'll have built the most basic version of the `cat` command line program.
 
@@ -45,11 +45,11 @@ Be careful that you don't overwrite existing files! Keep it simple, try copying 
 
 Example Usage
 
-	node mycopy.js filename1 filename2
+    node mycopy.js filename1 filename2
 
 Specifically
 
-	node mycopy.js test.txt test-copy.txt
+    node mycopy.js test.txt test-copy.txt
 
 You'll need to use the `process.argv` array to get the filenames from the command line.
 
@@ -81,7 +81,7 @@ Refer back to the Important APIs section of today's class material for more info
 
 **Usage**
 
-	$ node server.js
+    $ node server.js
 
 **Documentation**
 

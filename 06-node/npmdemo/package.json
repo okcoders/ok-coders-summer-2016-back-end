@@ -1,0 +1,16 @@
+{
+  "name": "npmdemo",
+  "version": "1.0.0",
+  "description": "in class example of creating a module for npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JustinW",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "4.13.1",
+    "ok-coders-back-end-example": "^1.0.0",
+    "ok-coders-inclass": "^1.0.0"
+  }
+}
