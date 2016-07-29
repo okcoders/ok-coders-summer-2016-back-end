@@ -201,7 +201,9 @@ with other programmers if you are trying to make the switch.
 		</tr>
 		<tr>
 			<td>8.2</td>
+			<td>Oklahoma County Assessor (Capstone): Scraping Pt. 3</td>
 			<td>Oklahoma County Assessor (Capstone): Api</td>
+			<td>Next Steps</td>
 		</tr>
 	</tbody>
 </table>
